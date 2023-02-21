@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Form for certification</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    background-color: rgb(252, 118, 106, 0.5);
+}
+
+label, p {
+    display: block;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.form {
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: black;
+    border: 5px solid gold
+}
+
+
+
+  
+.myform {
+    margin-left: 5%;
+    padding: 10px;
+}
+
+
+
+hr {
+    border: 3px double gray;
+    background-color: orange;
+    margin: 30px 0 30px 0;
+}
+
+.top-description {
+   color: whitesmoke;
+   text-align: center;
+   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: italic;
+}
+
+.user-details {
+    border-color:black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 0 8px 0;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+
+}
+fieldset {
+    border: none;
+}
+
+.select-class {
+    margin: 15px 0 15px 0;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 20%;
+    font-size: 15px;
+    display: block;
+}
+
+.comments {
+    margin-bottom: 6px;
+}
+
+textarea {
+    margin-top: 15px;
+    font-size: 1em;
+    height: 60px;
+}
+
+.submit{
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    margin-top: 15px;
+    padding: 10 0 10 0; 
+    background-color:aquamarine;
+    border-radius: 10px;
+}
+
+
+.border-for-submit {
+    margin: 15px 0px 10px 0px;
+}
+
+.chbox {
+    display: inline;
+}
+
+ input:hover, textarea:hover {
+    outline: 4px solid rgb(205, 181, 153);
+    transition: 0.3s;
+ }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inline {   /* radio buttons */
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.radio-NO {
+    margin-left: 15px;
+}
+    
+input[type=checkbox] {
+    margin: 0 50% 0 ;
+} 
+
+.chbox {
+    display: inline-block;
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h1 class="top-description" id="title">User Opinion Form</h1>
+      <p class="top-description" id="description">Your response is valuable for us! This helps us to improve our service!<i>Please enter the details correctly</i></p>
+      <hr>
+     <form class="myform" id="survey-form" action='https://register-demo.freecodecamp.org'>
+    
+      <fieldset>
+        <label  for="name" id="name-label">Enter Your Full Name</label>
+          <input class="user-details" type="text" id="name"  required placeholder="Example(Saran Avinash B)">
+        
+      
+      
+        <label for="email" id="email-label">Enter a valid E-mail</label>
+          <input class="user-details" type="email" id="email" required  multiple placeholder="example@anything.com">
+        
+      
+        <label  for="number" id="number-label" >Enter Your Age</label>
+          <input class="user-details" type="number" id="number" required placeholder="0" min="13" max="109">
+        
+        <hr>
+        </fieldset>
+
+       <fieldset>
+      
+        <label>Which is your favourite platform to play your game?
+        <select class="select-class" id="dropdown">
+          <option value="">select</option>
+          <option value="1">Android</option>
+          <option value="2">IOS</option>
+          <option value="3">Windows</option>
+          <option value="4">Others</option>
+        </select>
+        </label>
+
+        <hr>
+      
+        <p>Will you recommend your favourite game to your friends?</p>
+        <label class="inline" for="yes">Yes</label>
+        <input type="radio" id="yes" name="yes/no" value="yes"> 
+        <label class="inline radio-NO" for="no">No</label>
+        <input  type="radio" id="no" name="yes/no" value="no">
+        
+        <hr>
+
+        <p>Select the Games you love which will help us to improve the personalisations</p>
+        <label class="chbox" for="coc">Clash of clans</label>
+        <input type="checkbox" id="coc" name="android-game" value="clashofclans">
+        <label class="chbox" for="ff" >Free Fire</label>
+        <input type="checkbox" id="ff" name="android-game" value="freefire" >
+        <label class="chbox" for="angry-birds">Angry Birds</label>
+        <input type="checkbox" id="angry-birds" name="android-game" value="angrybirds">
+        <label class="chbox" for="temple-run">Temple Run</label>
+        <input type="checkbox" id="temple-run" name="android-game" value="templerun">
+        <label class="chbox" for="God-of-war" >God of War</label>
+        <input type="checkbox" id="God-of-war" name="pc-game" value="godofwar">
+        <label class="chbox" for="gta-5">GTA-5</label>
+        <input type="checkbox" id="gta-5" name="pc-game" value="gta5">
+        <label class="chbox" for="red-dead-redemption-2-and-1">Red Dead Redemption 2</label>
+        <input type="checkbox" id="red-dead-redemption-2-and-1" name="pc-game" value="reddeadredemption2">
+        <label class="chbox" for="minecraft">Minecraft</label>
+        <input type="checkbox" id=" minecraft" name="pc-games"value="minecraft">
+        <label class="chbox"  for="fortnite">Fortnite</label>
+        <input type="checkbox" id="fortnite" name="pc-games" value="fortnite">
+        <label class="chbox" for="others">All Others
+        <input type="checkbox" id="others" name="other-games" value="other-games">
+        </label>
+
+        
+       <hr>
+
+      </fieldset>
+      
+      <fieldset>
+        <label class="comment" for="comments">Write your thoughts about game</label>
+        <textarea id="comments" name="about-games" rows="5" cold="55" placeholder="It was december when I install.......">
+        </textarea>
+        
+         <hr class="border-for-submit"> 
+
+
+        <input class="submit" type="submit" value="submit" id="submit">
+        
+        
+         
+      </fieldset>
+
+     </form>
+    </div>
+  </body>
+
+</html>
